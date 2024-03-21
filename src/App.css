@@ -63,6 +63,85 @@
 .App-link {
   color: #61dafb;
 }
+div.example {
+  background-color: lightgrey;
+  padding: 20px;
+}
+/* tablet/phones */
+@media (min-width:768px) {
+  .text-2xl {
+    font-size: 22px;
+  }
+  .text-xl {
+    font-size: 18px;
+  }
+  .text-lg {
+    font-size: 16px;
+  }
+  .text-md {
+    font-size: 12px;
+  }
+  .text-sm {
+    font-size: 10px;
+  }
+  .responsiveColumns {
+	grid-template-columns: 100%;
+  }
+  .centerContainer {
+	width:100vw
+  }
+}
+/* Regular Screens */
+@media (min-width:1024px) {
+  .text-2xl {
+    font-size: 24px;
+  }
+  .text-xl {
+    font-size: 20px;
+  }
+  .text-lg {
+    font-size: 18px;
+  }
+  .text-md {
+    font-size: 14px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+  .responsiveColumns {
+	grid-template-columns: 35% 65%;
+  }
+  .centerContainer {
+	width:60vw
+  }
+}
+/* Big Screen (2k) */
+@media (min-width:2560px) {
+  .text-2xl {
+    font-size: 28px;
+  }
+  .text-xl {
+    font-size: 24px;
+  }
+  .text-lg {
+    font-size: 22px;
+  }
+  .text-md {
+    font-size: 18px;
+  }
+  .text-sm {
+    font-size: 14px;
+  }
+  .responsiveColumns {
+	grid-template-columns: 35% 65%;
+  }
+  .centerContainer {
+	width:60vw
+  }
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {

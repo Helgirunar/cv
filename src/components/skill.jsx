@@ -6,14 +6,14 @@ const Skill = ({ name, level, style, darkMode }) => {
 
   return (
     <div>
-      <div style={{ fontSize: '16px', marginLeft: '2px' }}>{name}</div>
+      <div className="text-md" style={{ marginLeft: '2px' }}>{name}</div>
       <div style={{ display: 'flex' }}>
         {levels.map((lvl, index) => (
           <React.Fragment key={index}>
             <div
               style={{
-                width: '40px',
-                height: '15px',
+                width: '18%',
+                height: '1vh',
                 backgroundColor: lvl <= level ? '#2465B4' : '#cccbcb', // Highlight up to the provided level
                 borderTopLeftRadius: index === 0 ? '25px' : '0', // Border radius for first level
                 borderBottomLeftRadius: index === 0 ? '25px' : '0', // Border radius for first level

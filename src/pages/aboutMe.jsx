@@ -1,21 +1,19 @@
-import { useState, useEffect } from 'react';
-import { FaCalendar } from "react-icons/fa";
+import { useMediaQuery } from 'react-responsive'
 import Card from '../components/card';
 import Skill from '../components/skill';
 import Title from '../components/title';
 import Experience from '../components/experience';
 
 const AboutMe = ({darkMode}) => {
-	console.log(darkMode);
   return (
-    <div style={{display: 'grid', gridTemplateColumns: '35% 65%'}}>
+    <div className="responsiveColumns" style={{display: 'grid'}}>
 		<div>
 			<Card containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}} darkMode={darkMode}>
 				<img src={process.env.PUBLIC_URL + '/images/faceImage.jpg'} style={{border: '2px solid #2465B4', borderRadius: '20%', height: '120px', width: '120px', textAlign: 'center', marginRight: '10px'}} alt="Image"/>
 				<div style={{padding: '6px'}}>
-					<div style={{marginTop: '2px', fontSize: '24px'}}>Helgi Rúnar Jóhannesson</div>
-					<div style={{marginTop: '1px', fontSize: '16px'}}>Helgirunarjohannesson@gmail.com</div>
-					<div style={{marginTop: '2px', fontSize: '16px'}}>+354 690-3074</div>
+					<div className="text-lg" style={{marginTop: '2px'}}>Helgi Rúnar Jóhannesson</div>
+					<div className="text-md"  style={{marginTop: '1px'}}>Helgirunarjohannesson@gmail.com</div>
+					<div className="text-md"  style={{marginTop: '2px'}}>+354 690-3074</div>
 				</div>
 			</Card>
 			<Card darkMode={darkMode} title="Hæfni" containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}}>
@@ -45,14 +43,14 @@ const AboutMe = ({darkMode}) => {
 		<div>
 			<Card darkMode={darkMode} style={{fontSize: '18px'}}>
 				<Title text="Um mig" darkMode={darkMode}/>
-				<div style={{padding: '4px', marginTop: '8px', marginBottom: '8px'}}>
+				<div className="text-md" style={{padding: '4px', marginTop: '8px', marginBottom: '8px'}}>
 					Ég er tölvunafræðingur með mikinn áhuga á forritun og hugbúnaðarþróun, hef lært tölvunarfræði í um það bil 8 ára þar sem ég hóf nám í tölvunafræði með viðbættum stúdent í Fjölbrautarskóla Suðurnesja
 					og fór svo í framhaldsnám í Tölvunafræði í Haskólanum í Reykjavík. Ég hef unnið sem Fullstack developer í 2 ár hjá fyrirtæki sem heitir Northbound, þar tók ég þátt í að þróa og viðhalda vefsíðum og kerfum þeirra
 					undir stjórn Forstjóra og Tæknistjóra.
 				</div>
 				<Title text="Starfsreynsla" darkMode={darkMode} />
 				<div style={{padding: '4px', marginBottom: '8px'}}>
-					<Experience 
+					<Experience
 						name="Northbound" 
 						status="Fullstack Developer" 
 						dates="Mars 2022 - Desember 2023" 

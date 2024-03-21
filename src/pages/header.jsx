@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = ({darkMode, toggleDarkMode}) => {
   return (
-		<div id="header" style={{backgroundColor: '#2465B4', height: '5vh', width: '100%'}}>
-			<div style={{width: '60vw', height: '5vh', margin: 'auto', display: 'flex', position: 'relative'}}>
-				<div style={{color:'white', fontSize: '38px'}}>Helgi Rúnar Jóhannesson</div>
+		<div id="header" style={{backgroundColor: '#2465B4', height: '5vh', width: '100%', minHeight: '60px'}}>
+			<div className="centerContainer" style={{height: '5vh', margin: 'auto', display: 'flex', position: 'relative'}}>
+				<div className="text-2xl" style={{color:'white', marginTop: 'auto', marginBottom: 'auto'}}>Helgi Rúnar Jóhannesson</div>
 				<div onClick={toggleDarkMode} style={{position: 'absolute', right: '25px', display: 'flex', flexFlow: 'column', height:'5vh', gap: '9px', cursor: 'pointer'}}>
 					{/* <div style={{color: darkMode ? 'white' : 'white'}}>DarkMode</div> */}
 					<div style={{height: '17.5px', width: '35px', borderRadius: '25px', display: 'flex', alignContent: 'center', position: 'relative', margin: 'auto', backgroundColor: '#E7E7E7'}}>

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { useMediaQuery } from 'react-responsive'
 import './App.css';
 import Header from './pages/header';
 import AboutMe from './pages/aboutMe';
@@ -11,9 +12,9 @@ function App() {
 		setDarkMode(!darkMode);
 	};
   return (
-    <div className={darkMode ? 'dmm' : 'lmm'} style={{ height: '100%', width: '100%', display:'flex-col',justifyContent: 'center', flexFlow: 'row'}}>
+    <div className={darkMode ? 'dmm' : 'lmm'} style={{ minHeight: '100vh', height: '100%', width: '100%', display:'flex-col',justifyContent: 'center', flexFlow: 'row'}}>
 		<Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-		<div style={{width: '60vw', margin: 'auto'}} id="container">
+		<div className="centerContainer" style={{margin: 'auto'}} id="container">
 			<AboutMe darkMode={darkMode}/>
 		</div>
     </div>
