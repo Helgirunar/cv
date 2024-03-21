@@ -13,6 +13,42 @@
   }
 }
 
+/* App.css */
+.lmm {
+  background-color: #E7E7E7;
+  color: #000000;
+  transition: all 0.3s ease-in 0s;
+}
+
+.dmm {
+  background-color: #404040;
+  color: #ffffff;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* App.css */
+.lms {
+  background-color: #cccbcb;
+  color: #000000;
+  transition: all 0.3s ease-in 0s;
+}
+
+.dms {
+  background-color: #303030;
+  color: #ffffff;
+  transition: all 0.3s ease-in 0s;
+}
+
+.lmb {
+  border: 2px solid #cccbcb;
+  transition: all 0.3s ease-in 0s;
+}
+
+.dmb {
+  border: 2px solid #2b2b2b;
+  transition: all 0.3s ease-in 0s;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
