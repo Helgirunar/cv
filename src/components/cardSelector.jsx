@@ -8,9 +8,6 @@ const CardSelector = ({ style, items, darkMode, children }) => {
         padding: 0,
         transition: 'background-color 0.3s ease-in-out', // Transition effect for smooth color change
     };
-	items.forEach(item => {
-		console.log(item);
-	})
     return (
         <div style={{ padding: '12px', margin: '12px' }}>
             <div style={{ display: 'flex', alignContent: 'space-between', width: '100%', borderRadius: '8px 8px 0px 0px' }}>

@@ -1,8 +1,7 @@
 import {useState} from 'react';
 import './App.css';
-import Header from './components/header';
-import Card from './components/card';
-import AboutMe from './components/aboutMe';
+import Header from './pages/header';
+import AboutMe from './pages/aboutMe';
 import './App.css';
 
 function App() {
@@ -12,9 +11,9 @@ function App() {
 		setDarkMode(!darkMode);
 	};
   return (
-    <div className={darkMode ? 'dmm' : 'lmm'} style={{ height: '100vh', width: '100vw', display:'flex-col',justifyContent: 'center', flexFlow: 'row', overflow: 'hidden'}}>
+    <div className={darkMode ? 'dmm' : 'lmm'} style={{ height: '100%', width: '100%', display:'flex-col',justifyContent: 'center', flexFlow: 'row'}}>
 		<Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-		<div style={{height: '95vh', width: '60vw', margin: 'auto', overflow: 'hidden'}} id="container">
+		<div style={{width: '60vw', margin: 'auto'}} id="container">
 			<AboutMe darkMode={darkMode}/>
 		</div>
     </div>

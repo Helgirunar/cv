@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({darkMode, toggleDarkMode}) => {
   return (
-		<div id="header" style={{backgroundColor: '#2465B4', height: '5vh', width: '100vw', padding: '5px 10px'}}>
+		<div id="header" style={{backgroundColor: '#2465B4', height: '5vh', width: '100%'}}>
 			<div style={{width: '60vw', height: '5vh', margin: 'auto', display: 'flex', position: 'relative'}}>
 				<div style={{color:'white', fontSize: '38px'}}>Helgi Rúnar Jóhannesson</div>
 				<div onClick={toggleDarkMode} style={{position: 'absolute', right: '25px', display: 'flex', flexFlow: 'column', height:'5vh', gap: '9px', cursor: 'pointer'}}>
