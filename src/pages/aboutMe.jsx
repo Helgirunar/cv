@@ -6,17 +6,17 @@ import Experience from '../components/experience';
 
 const AboutMe = ({darkMode}) => {
   return (
-    <div className="responsiveColumns" style={{display: 'grid'}}>
+    <div className="responsiveColumns" style={{display: 'grid', marginTop: '10px', gridGap: '10px'}}>
 		<div>
-			<Card containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}} darkMode={darkMode}>
-				<img src={process.env.PUBLIC_URL + '/images/faceImage.jpg'} style={{border: '2px solid #2465B4', borderRadius: '20%', height: '120px', width: '120px', textAlign: 'center', marginRight: '10px'}} alt="Image"/>
-				<div style={{padding: '6px'}}>
+			<Card containerStyle={{display: 'flex', gap: '10px'}} darkMode={darkMode}>
+				<img src={process.env.PUBLIC_URL + '/images/faceImage.jpg'} style={{border: '2px solid #2465B4', borderRadius: '20%', height: '120px', width: '120px', textAlign: 'center'}} alt="Image"/>
+				<div style={{alignItems:'center', marginTop: 'auto', marginBottom: 'auto'}}>
 					<div className="text-lg" style={{marginTop: '2px'}}>Helgi Rúnar Jóhannesson</div>
 					<div className="text-md"  style={{marginTop: '1px'}}>Helgirunarjohannesson@gmail.com</div>
 					<div className="text-md"  style={{marginTop: '2px'}}>+354 690-3074</div>
 				</div>
 			</Card>
-			<Card darkMode={darkMode} title="Hæfni" containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}}>
+			<Card darkMode={darkMode} title="Hæfni" style={{marginTop: '10px'}} containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}}>
 				<div style={{gridColumn: 'span 2', fontSize: '20px', marginTop: '2px'}}>Tæknilegar</div>
 				<Skill name="Laravel" level={5}/>
 				<Skill name="PHP" level={5}/>
@@ -91,7 +91,7 @@ const AboutMe = ({darkMode}) => {
 						/>
 				</div>
 				<Title text="Áhugamál" darkMode={darkMode}/>
-				<div style={{padding: '4px', marginTop: '8px', marginBottom: '8px'}}>Hef frá ungum aldri haft gaman af tölvuleikjum og tæknitengdum hlutum. 
+				<div className="text-md" style={{padding: '4px', marginTop: '8px', marginBottom: '8px'}}>Frá ungum aldri hef ég haft gaman af tölvuleikjum og tæknitengdum hlutum. 
 					Eftir að ég lærði tölvrunafræði í Fjölbrautarskóla Suðurnesja fékk ég einnig mikinn áhuga á forritun. 
 					Ég hef líka áhuga á borðspilum og nýlega hef ég haft áhuga á Frisbee golf og að snjóbretta.
 				</div>
