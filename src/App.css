@@ -17,36 +17,36 @@
 .lmm {
   background-color: #E7E7E7;
   color: #000000;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 .dmm {
   background-color: #404040;
   color: #ffffff;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 /* App.css */
 .lms {
   background-color: #ebebeb;
   color: #000000;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 .dms {
   background-color: #303030;
   color: #ffffff;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 .lmb {
   border: 2px solid #cccbcb;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 .dmb {
   border: 2px solid #2b2b2b;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in;
 }
 
 .App-header {
@@ -63,6 +63,29 @@
 .App-link {
   color: #61dafb;
 }
+
+  .text-2xl {
+    font-size: 24px;
+  }
+  .text-xl {
+    font-size: 20px;
+  }
+  .text-lg {
+    font-size: 18px;
+  }
+  .text-md {
+    font-size: 14px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+  .responsiveColumns {
+	grid-template-columns: auto;
+	gap: 20px;
+  }
+  .centerContainer {
+	width:100vw
+  }
 /* tablet/phones */
 @media (min-width:768px) {
   .text-2xl {
@@ -109,7 +132,7 @@
 	gap: 20px;
   }
   .centerContainer {
-	width:60vw
+	width:80vw
   }
 }
 /* Regular Screens */

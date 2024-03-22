@@ -1,16 +1,46 @@
-import { useMediaQuery } from 'react-responsive'
+import { useState } from "react";
 import Card from '../components/card';
 import Skill from '../components/skill';
 import Title from '../components/title';
 import Experience from '../components/experience';
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 
 const AboutMe = ({darkMode}) => {
+	const [hoveredLink, setHoveredLink] = useState(null);
+	
+	const setHover = index => {
+		setHoveredLink(index);
+	};
+
   return (
-    <div className="responsiveColumns" style={{display: 'grid', marginTop: '10px', gridGap: '10px'}}>
+    <div className="responsiveColumns" style={{display: 'grid', marginTop: '20px', paddingBottom: '20px'}}>
 		<div>
-			<Card containerStyle={{display: 'flex', gap: '10px'}} darkMode={darkMode}>
-				<img src={process.env.PUBLIC_URL + '/images/faceImage.jpg'} style={{border: '2px solid #2465B4', borderRadius: '20%', height: '120px', width: '120px', textAlign: 'center'}} alt="Image"/>
-				<div style={{alignItems:'center', marginTop: 'auto', marginBottom: 'auto'}}>
+			<Card containerStyle={{display: 'flex', flexDirection: 'column', gap: '8px'}} darkMode={darkMode}>
+				<div style={{width: '45%', marginLeft: 'auto', marginRight: 'auto' }}>
+					<img src={process.env.PUBLIC_URL + '/images/faceImage.jpg'} style={{borderRadius: '50%', width: '100%',}} alt="Image"/>
+					<div style={{ display: 'flex', gap: '8px 0px', justifyContent: 'space-around', marginTop: '2px' }}>
+						<a
+							href="https://www.linkedin.com/in/helgi-runar/"
+							target="_blank"
+							style={{ padding: '2px', color: hoveredLink === 1 ? '#2465B4' : darkMode ? 'white' : 'black', transition: 'ease-out 0.15s' }}
+							onMouseEnter={() => setHover(1)}
+							onMouseLeave={() => setHover(null)}
+						>
+							<CiLinkedin style={{ width: '30px', height: '30px' }} />
+						</a>
+						<a
+							href="https://github.com/Helgirunar"
+							target="_blank"
+							style={{ padding: '2px', color: hoveredLink === 2 ? '#2465B4' : darkMode ? 'white' : 'black', transition: 'ease-out 0.15s' }}
+							onMouseEnter={() => setHover(2)}
+							onMouseLeave={() => setHover(null)}
+						>
+							<FaGithub style={{ width: '30px', height: '30px', transition: 'ease-out 0.15s' }} />
+						</a>
+					</div>
+				</div>
+				<div>
 					<div className="text-lg" style={{marginTop: '2px'}}>Helgi Rúnar Jóhannesson</div>
 					<div className="text-md"  style={{marginTop: '1px'}}>Helgirunarjohannesson@gmail.com</div>
 					<div className="text-md"  style={{marginTop: '2px'}}>+354 690-3074</div>

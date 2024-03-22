@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import React from 'react';
 
 const Experience = ({ name, status, dates, description, style, children }) => {

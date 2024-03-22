@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import { useMediaQuery } from 'react-responsive'
 import './App.css';
 import Header from './pages/header';
 import AboutMe from './pages/aboutMe';
