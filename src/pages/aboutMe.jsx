@@ -36,7 +36,7 @@ const AboutMe = ({darkMode}) => {
 							onMouseEnter={() => setHover(2)}
 							onMouseLeave={() => setHover(null)}
 						>
-							<FaGithub style={{ width: '30px', height: '30px', transition: 'ease-out 0.15s' }} />
+							<FaGithub style={{ width: '30px', height: '30px' }} />
 						</a>
 					</div>
 				</div>
@@ -46,7 +46,7 @@ const AboutMe = ({darkMode}) => {
 					<div className="text-md"  style={{marginTop: '2px'}}>+354 690-3074</div>
 				</div>
 			</Card>
-			<Card darkMode={darkMode} title="Hæfni" style={{marginTop: '10px'}} containerStyle={{display: 'grid', gridTemplateColumns: 'auto auto'}}>
+			<Card darkMode={darkMode} title="Hæfni" style={{marginTop: '10px'}} containerStyle={{display: 'grid', gridTemplateColumns: '50% 50%'}}>
 				<div style={{gridColumn: 'span 2', fontSize: '20px', marginTop: '2px'}}>Tæknilegar</div>
 				<Skill name="Laravel" level={5}/>
 				<Skill name="PHP" level={5}/>

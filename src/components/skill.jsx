@@ -5,7 +5,7 @@ const Skill = ({ name, level, style, darkMode }) => {
   const levels = [1, 2, 3, 4, 5];
 
   return (
-    <div>
+    <div style={{...style}}>
       <div className="text-md" style={{ marginLeft: '2px' }}>{name}</div>
       <div style={{ display: 'flex' }}>
         {levels.map((lvl, index) => (
