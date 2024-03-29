@@ -1,0 +1,88 @@
+{
+	"aboutme": "Ég er tölvunarfræðingur með mikinn áhuga á forritun og hugbúnaðarþróun. Ég hef lært tölvunarfræði í um það bil 8 ár þar sem ég hóf nám í tölvunafræði með viðbættum stúdent í Fjölbrautarskóla Suðurnesja. Síðan fór ég í framhaldsnám í Tölvunarfræði í Háskólanum í Reykjavík. Ég hef unnið sem Fullstack developer í 2 ár hjá fyrirtæki sem heitir Northbound. Þar tók ég þátt í að þróa og viðhalda vefsíðum og kerfum þeirra undir stjórn Forstjóra og Tæknistjóra.",
+	"interests": "Frá unga aldri hef ég haft gaman af tölvuleikjum og tæknitengdum hlutum. Eftir að ég lærði tölvrunarfræði í Fjölbrautarskóla Suðurnesja fékk ég einnig mikinn áhuga á forritun. Ég hef líka áhuga á borðspilum og nýlega hef ég haft áhuga á Frisbee golf og að stunda snjóbretti.",
+	"schools": 
+	[
+		{
+			"name": "Háskólinn í Reykjavík",
+			"status": "BSc í tölvunarfræði",
+			"dates": "Jan 2017 - Des 2021",
+			"description": "Lokaverkefnið vann hópurinn minn í samstarfi við AdvaniaDC eða AtNorth í dag. Þar gerðum við hash rate monitor, og notuðum React, nodejs, css, html og fleira til að forrita það."
+		},
+		{
+			"name": "Fjölbrautarskóli Suðurnesja",
+			"status": "Tölvunarfræði með stúdentsprófi.",
+			"dates": "2012 - 2016",
+			"description": ""
+		}
+	],
+	"jobs": 
+	[
+		{
+			"name": "Northbound",
+			"status": "Fullstack Developer",
+			"dates": "Mars 2022 - Desember 2023",
+			"description": "Vann að ýmsum verkefnum fyrir Gleely.com og Northbound.is, bæði á bakenda og framenda. Þar að meðal útlit á framenda, bakenda og api tengingar við chatGPT, LuluPrint, GoogleAds, GoogleMaps."
+		},
+		{
+			"name": "Menntamálastofnun",
+			"status": "Starfsnemi í vefþjónustu",
+			"dates": "Júní 2021 - September 2021",
+			"description": "Tók þátt í forritun af Adalnamskra.is og lagfæringum á vefleikjum."
+		},
+		{
+			"name": "Mennta- og menningarmálaráðuneytið",
+			"status": "Starfsnemi í tækniteymi",
+			"dates": "Maí 2020 - Águst 2020",
+			"description": "Var partur af teymi sem fékk það verkefni að færa listamannalaun á rafrænt form. Fyrir það voru öll gögn geymd skriflega. Aukalega vann ég í nokkur smá verkefnum fyrir önnur teymi."
+		},
+		{
+			"name": "Etix Group Iceland (Borealis Data Center)",
+			"status": "Tæknimaður",
+			"dates": "September 2018 - September 2019",
+			"description": "Vann við að setja upp Bitcoin vélar, bæði í Gagnaveri þeirra á Suðurnesjum og Blönduósi og var svo einn af tveimur sem sá um vélar í gagnaveri á Suðurnesi."
+		}
+	],
+	"recommendations":
+	[
+		{
+			"name": "Ívar Rafn Þórarinsson",
+			"status": "Forstjóri Northbound",
+			"dates": "+354 866 8031",
+			"description": ""
+		},
+		{
+			"name": "Arnar Stefánsson",
+			"status": "Tæknistjóri Northbound",
+			"dates": "+354 848 8777",
+			"description": ""
+		}
+	],
+	"talents":
+	{
+		"skills": [
+			{"name": "Laravel", "level": 5},
+			{"name": "PHP", "level": 5},
+			{"name": "Javascript", "level": 5},
+			{"name": "Typescript", "level": 5},
+			{"name": "React", "level": 3},
+			{"name": "React Native", "level": 2},
+			{"name": "TailwindCSS", "level": 5},
+			{"name": "SQL", "level": 4},
+			{"name": "CSS", "level": 4},
+			{"name": "Python", "level": 3},
+			{"name": "C++", "level": 3},
+			{"name": "C#", "level": 3}
+		],
+		"languages": [
+			{"name": "Íslenska", "level": 5},
+			{"name": "Enska", "level": 5},
+			{"name": "Spænska", "level": 1}
+		],
+		"more": [
+			{"name": "Mannlegt samskipti", "level": 5},
+			{"name": "Teymisvinna", "level": 4},
+			{"name": "Frumkvæði", "level": 5}
+		]
+	}
+}
