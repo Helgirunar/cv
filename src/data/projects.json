@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Gifting",
+		"description": "Þar sem ég var að fara gifta mig 20. Júlí 2024 þá ákvað ég að gera mína eigin vefsíðu fyrir það. Ég gerði full gert innrakerfi sem sér um að hafa yfirlit á gestum og boðum, stýra bakgrunni og litum á vefsíðunni og búa til sín eigin síður fyrir brúðkaupið sitt. Einn eiginleiki á vefsíðunni er að búa til QR kóða fyrir hvert boð og hægt er að setja þau svo á boðskort fyrir aðilann sem á við. Þá geta gestir skannað QR kóðann og farið beint á síðuna þar sem þau geta svarað boðinu. ",
+		"stack": ["Laravel", "aws", "TailwindCSS", "mysql"],
+		"images": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	}
+]
