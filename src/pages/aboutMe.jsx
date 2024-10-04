@@ -86,12 +86,6 @@ const AboutMe = ({darkMode}) => {
 				<div className="text-md" style={{padding: '4px', marginTop: '8px', marginBottom: '8px'}}>
 					{data.interests}
 				</div>
-				<Title text="Meðmæli" darkMode={darkMode}/>
-				<div style={{padding: '4px', marginBottom: '8px'}}>
-					{data.recommendations.map((skill) => {
-						return (<Experience key={skill.name} name={skill.name} status={skill.status} dates={skill.dates} description={skill.description}/>);
-					})}
-				</div>
 			</Card>
 		</div>
     </div>
